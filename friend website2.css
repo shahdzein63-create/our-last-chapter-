@@ -1,0 +1,520 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cream: #fff9f5;
+    --pink: #f3cbd2;
+    --rose: #c86f83;
+    --deep: #543744;
+    --muted: #8f737c;
+    --lilac: #e8ddf1;
+    --white: #fffdfb;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cream);
+    color: var(--deep);
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+button, a {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ead9d8;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.logo:first-letter {
+    color: var(--rose);
+}
+
+header span {
+    font-size: 10px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero {
+    min-height: 620px;
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse, #fff 0%, #fff8f4 55%, #f9e8e9 100%);
+}
+
+.tag {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--rose);
+    text-transform: uppercase;
+}
+
+h1, h2, .name {
+    font-family: Georgia, serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: clamp(65px, 10vw, 115px);
+    line-height: 1;
+    letter-spacing: -5px;
+    margin: 30px 0;
+}
+
+h1 em, h2 em {
+    color: var(--rose);
+}
+
+.subtitle {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    background: var(--deep);
+    color: white;
+    padding: 14px 23px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.main-btn:hover {
+    background: var(--rose);
+    transform: translateY(-3px);
+}
+
+.bottom-note {
+    margin-top: 90px;
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+section {
+    padding: 90px 7%;
+}
+
+.intro {
+    text-align: center;
+    background: var(--white);
+}
+
+.intro h2 {
+    font-size: clamp(27px, 4vw, 42px);
+    line-height: 1.5;
+    margin: 25px 0 15px;
+}
+
+.intro p:last-child,
+.description {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.girls {
+    text-align: center;
+    background: #fcf0ed;
+}
+
+section > h2 {
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 800px;
+    margin: 40px auto 25px;
+}
+
+.girl-card {
+    border: 1px solid #ead6d7;
+    background: #fffaf7;
+    padding: 30px 25px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    color: var(--deep);
+    transition: .25s;
+}
+
+.girl-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 40px #54374415;
+}
+
+.girl-card.lilac {
+    background: #fbf7ff;
+}
+
+.flower {
+    font-size: 40px;
+    color: var(--rose);
+    margin: 25px 0 5px;
+}
+
+.name {
+    font-size: 42px;
+}
+
+.caption {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.open {
+    font-size: 11px;
+    color: var(--rose);
+    margin-top: auto;
+    padding-top: 25px;
+}
+
+.hint {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.open-when {
+    text-align: center;
+    background: var(--white);
+}
+
+.envelopes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
+    margin-top: 40px;
+}
+
+.envelopes button {
+    min-height: 145px;
+    background: #fff8f6;
+    border: 1px solid #ead9d8;
+    color: var(--deep);
+    font-size: 28px;
+    transition: .2s;
+}
+
+.envelopes button:nth-child(2) {
+    background: #fbf5ff;
+}
+
+.envelopes button:nth-child(3) {
+    background: #fff9e9;
+}
+
+.envelopes button:nth-child(4) {
+    background: #f3f8f4;
+}
+
+.envelopes button:hover {
+    transform: translateY(-5px);
+}
+
+.envelopes span {
+    display: block;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.love-section {
+    text-align: center;
+    background: #f9e8e9;
+}
+
+.love-section > p:not(.tag) {
+    font-size: 12px;
+    color: var(--muted);
+    margin: 15px 0 25px;
+}
+
+#loveMessage {
+    min-height: 30px;
+    margin-top: 25px;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    color: var(--rose);
+}
+
+.quiz {
+    text-align: center;
+    background: #fffaf7;
+}
+
+.quiz-card {
+    max-width: 600px;
+    margin: 35px auto 0;
+    padding: 35px 20px;
+    background: white;
+    border: 1px solid #ead9d8;
+}
+
+.quiz-card h3 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 24px;
+    margin: 20px auto;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.option {
+    border: 1px solid #e7cfd4;
+    background: #fff9f7;
+    color: var(--deep);
+    padding: 10px 13px;
+    font-size: 11px;
+}
+
+.option:hover, .option.selected {
+    background: var(--pink);
+}
+
+#result {
+    color: var(--rose);
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.text-btn {
+    background: none;
+    border: none;
+    color: var(--rose);
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.future {
+    background: #f6efeb;
+}
+
+.paper {
+    max-width: 720px;
+    margin: auto;
+    background: #fffdf9;
+    border: 1px solid #eee0d8;
+    padding: 55px;
+}
+
+.paper h2 {
+    font-size: 42px;
+    margin: 25px 0;
+}
+
+.paper p:not(.tag) {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 2;
+    color: #806872;
+    margin-bottom: 20px;
+}
+
+.paper .signoff {
+    color: var(--rose) !important;
+}
+
+.ending {
+    text-align: center;
+    background: var(--cream);
+}
+
+.ending h2 {
+    font-size: clamp(36px, 5vw, 55px);
+}
+
+.ending > p:not(.tag) {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 15px;
+}
+
+.signature {
+    margin-top: 35px !important;
+    letter-spacing: 1px;
+}
+
+footer {
+    padding: 22px 7%;
+    background: var(--deep);
+    color: #f8e9e8;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: #3a232d88;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 10;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-box {
+    width: min(100%, 530px);
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #fffaf7;
+    padding: 45px 35px;
+    text-align: center;
+    position: relative;
+    animation: appear .25s ease-out;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: var(--muted);
+}
+
+.modal-flower {
+    font-size: 38px;
+    color: var(--rose);
+    margin-bottom: 15px;
+}
+
+.modal-box h2 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+#modalText {
+    font-family: Georgia, serif;
+    color: #806872;
+    font-size: 15px;
+    line-height: 1.9;
+    text-align: left;
+    white-space: pre-line;
+    margin: 20px 0;
+}
+
+.signoff {
+    color: var(--rose);
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    header span {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    section {
+        padding: 70px 6%;
+    }
+
+    .hero {
+        min-height: 570px;
+    }
+
+    .cards {
+        gap: 12px;
+    }
+
+    .girl-card {
+        padding: 20px 15px;
+        min-height: 250px;
+    }
+
+    .name {
+        font-size: 33px;
+    }
+
+    .envelopes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .paper {
+        padding: 35px 25px;
+    }
+
+    footer {
+        padding: 20px 5%;
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 390px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+}

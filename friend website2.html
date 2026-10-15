@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Little World ♡</title>
+    <link rel="stylesheet" href="friend website2.css">
+</head>
+<body>
+
+<header>
+    <a href="#home" class="logo">♡ Our Little World</a>
+    <span>Made with love, always</span>
+</header>
+
+<section class="hero" id="home">
+    <p class="tag">A LITTLE CORNER OF THE INTERNET</p>
+
+    <h1>Our Last<br><em>Chapter</em> ♡</h1>
+
+    <p class="subtitle">
+        For the girls who became part of my favorite memories.<br>
+        One little website, a thousand feelings.
+    </p>
+
+    <a href="#girls" class="main-btn">Enter Our Little World ♡</a>
+
+    <p class="bottom-note">A tiny keepsake for a very big chapter ✿</p>
+</section>
+
+<section class="intro">
+    <p class="tag">01 — THE REASON</p>
+    <h2>Some people turn ordinary days<br>into <em>stories we keep forever.</em></h2>
+    <p>And somehow, you became part of mine. 🤍</p>
+</section>
+
+<section class="girls" id="girls">
+    <p class="tag">02 — OPEN YOUR LITTLE LETTER</p>
+    <h2>A little something<br>for <em>you.</em></h2>
+    <p class="description">Pick your name. There's a tiny note waiting for you.</p>
+
+    <div class="cards">
+
+        <button class="girl-card" data-letter="aya">
+            <span class="flower">✿</span>
+            <span class="name">Aya</span>
+            <span class="caption">Your little corner of this story</span>
+            <span class="open">Open your letter ↗</span>
+        </button>
+
+        <button class="girl-card lilac" data-letter="asmaa">
+            <span class="flower">❀</span>
+            <span class="name">Asmaa</span>
+            <span class="caption">Your little corner of this story</span>
+            <span class="open">Open your letter ↗</span>
+        </button>
+
+    </div>
+
+    <p class="hint">Psst… you can open both letters. No secrets here, just love. ♡</p>
+</section>
+
+<section class="open-when">
+    <p class="tag">03 — FOR WHATEVER DAY YOU'RE HAVING</p>
+    <h2>Open when… <em>♡</em></h2>
+    <p class="description">Choose the envelope that feels like you today.</p>
+
+    <div class="envelopes">
+        <button data-note="miss">💌<span>You miss us</span></button>
+        <button data-note="sad">🫂<span>You need a hug</span></button>
+        <button data-note="laugh">☻<span>You need a laugh</span></button>
+        <button data-note="dream">✨<span>You need a reminder</span></button>
+    </div>
+</section>
+
+<section class="love-section">
+    <p class="tag">04 — A SMALL REMINDER</p>
+    <h2>Need a little<br><em>love?</em></h2>
+    <p>Tap the button. Let the universe be nice to you for a second.</p>
+
+    <button class="main-btn" id="loveButton">I could use some love ♡</button>
+
+    <p id="loveMessage">Your reminder will appear here. ♡</p>
+</section>
+
+<section class="quiz">
+    <p class="tag">05 — VERY IMPORTANT RESEARCH</p>
+    <h2>Who's most <em>likely to…</em></h2>
+    <p class="description">A completely serious investigation into our friendship. 😂</p>
+
+    <div class="quiz-card">
+        <h3 id="question">Say "I'm on my way" while still getting ready?</h3>
+
+        <div class="options">
+            <button class="option">Aya</button>
+            <button class="option">Asmaa</button>
+            <button class="option">Shahd</button>
+        </div>
+
+        <p id="result"></p>
+        <button id="nextQuestion" class="text-btn">Next question ↗</button>
+    </div>
+</section>
+
+<section class="future">
+    <div class="paper">
+        <p class="tag">06 — TO OUR FUTURE SELVES</p>
+
+        <h2>Dear future us,</h2>
+
+        <p>
+            I hope life is being kind to you. I hope you're becoming the people
+            you once dreamed of being, finding your own kind of happiness,
+            and celebrating every little win.
+        </p>
+
+        <p>
+            And when life gets busy and our days look different, I hope we
+            still find our way back to each other — even if it's just through
+            a random message that says, "Do you remember when…?"
+        </p>
+
+        <p class="signoff">
+            Here's to the memories we made, and the ones still waiting for us. ♡
+        </p>
+    </div>
+</section>
+
+<section class="ending">
+    <p class="tag">✧ ✿ ♡ ✿ ✧</p>
+    <h2>We're not at the end.<br>Just turning <em>a page.</em></h2>
+    <p>Thank you for being part of this chapter.</p>
+    <p class="signature">Made with love, for my favorite people ♡</p>
+</section>
+
+<footer>
+    <span>OUR LITTLE WORLD</span>
+    <span>A memory in progress ♡</span>
+</footer>
+
+<div class="modal" id="modal">
+    <div class="modal-box">
+        <button id="closeModal" class="close">×</button>
+        <div class="modal-flower">♡</div>
+        <p class="tag">A LITTLE NOTE, JUST FOR YOU</p>
+        <h2 id="modalTitle">Dear you,</h2>
+        <p id="modalText"></p>
+        <p class="signoff">With so much love, always ♡</p>
+        <button id="hugButton" class="main-btn">Sending you a hug ♡</button>
+    </div>
+</div>
+
+<script src="friend website2.js"></script>
+</body>
+</html>
